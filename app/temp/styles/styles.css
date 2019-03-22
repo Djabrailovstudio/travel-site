@@ -1237,3 +1237,17 @@ padding-top: 10px;
   }
   }
 
+.reveal-item{
+  opacity: 0;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.reveal-item__is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+
+  }
+
