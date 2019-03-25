@@ -1,9 +1,12 @@
 module.exports = {
   mode: "development",
-  entry:  __dirname + "/app/assets/scripts/App.js",
+  entry: {
+    App: __dirname + "/app/assets/scripts/App.js",
+    Vendor:  __dirname + "/app/assets/scripts/Vender.js"
+  },
   output: {
     path: __dirname + "/app/temp/scripts",
-    filename: "App.js"
+    filename: "[name].js"
   }, 
   module: {
     rules: [
